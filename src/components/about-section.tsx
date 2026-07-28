@@ -99,7 +99,7 @@ export function AboutSection() {
                   <MapPin className="w-5 h-5 text-white/70" />
                   <div>
                     <p className="text-white/60 text-xs">Ubicación</p>
-                    <p className="text-white font-semibold">Guayaquil, Guayas — Ecuador</p>
+                    <p className="text-white font-semibold">Carchi 609 y 1ro. de Mayo, Guayaquil</p>
                   </div>
                 </div>
 

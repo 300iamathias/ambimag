@@ -22,11 +22,11 @@ export function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="mb-4">
               <Image
-                src="/ambimag-logo-white.png"
+                src="/ambimag-logo-footer.png"
                 alt="Ambimag Ecuador - Soluciones Integrales"
-                width={180}
-                height={65}
-                className="h-14 w-auto object-contain"
+                width={218}
+                height={86}
+                className="h-16 sm:h-20 w-auto object-contain"
               />
             </div>
             <p className="text-white/70 text-sm leading-relaxed mt-3">
@@ -121,7 +121,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 text-white/60" />
-                <span className="text-white/70 text-sm">Guayaquil, Guayas — Ecuador</span>
+                <span className="text-white/70 text-sm">Carchi 609 y 1ro. de Mayo, Guayaquil</span>
               </li>
             </ul>
             <div className="mt-4 bg-white/10 rounded-lg p-3">
