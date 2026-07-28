@@ -1,0 +1,35 @@
+{
+  "name": "Ambimag - Consultoría Ambiental en Ecuador",
+  "short_name": "Ambimag",
+  "description": "Consultoría ambiental integral, licencias, permisos y cumplimiento normativo en Ecuador. Contáctenos directamente al WhatsApp.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1B7340",
+  "theme_color": "#1B7340",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "es",
+  "categories": ["business", "environment"],
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [],
+  "prefer_related_applications": false
+}

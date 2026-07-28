@@ -1,0 +1,117 @@
+import type { Metadata, Viewport } from "next";
+import { Inter, Playfair_Display } from "next/font/google";
+import "./globals.css";
+import { Toaster } from "@/components/ui/toaster";
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#1B7340",
+};
+
+export const metadata: Metadata = {
+  title: "Ambimag | Consultoría Ambiental Integral en Ecuador",
+  description:
+    "Acompañamos a empresas e instituciones a desarrollar su crecimiento ambiental sustentable alineado con las normas regulatorias locales e internacionales. Consultoría ambiental integral, Gestión 360, Capacitación Profesional. Guayaquil, Ecuador.",
+  keywords: [
+    "consultoría ambiental Ecuador",
+    "licencias ambientales",
+    "gestión normativa ambiental",
+    "Ambimag",
+    "Galo Estupiñán Vera",
+    "consultoría integral ambiental",
+    "Ecuador",
+    "estudios ambientales",
+    "SST ambiental",
+    "capacitación profesional",
+    "gestión 360 proyectos contractuales",
+    "ingeniería ambiental",
+    "higiene industrial",
+    "seguridad industrial",
+    "gestión de desechos",
+    "Guayaquil",
+  ],
+  authors: [{ name: "Galo Estupiñán Vera" }],
+  manifest: "/manifest.json",
+  icons: {
+    icon: [
+      { url: "/icon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: [
+      { url: "/icon-180x180.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "Ambimag",
+  },
+  openGraph: {
+    title: "Ambimag | Consultoría Ambiental Integral en Ecuador",
+    description:
+      "Acompañamos a empresas e instituciones a desarrollar su crecimiento ambiental sustentable. +10 años siendo líderes en consultoría y capacitación corporativa.",
+    siteName: "Ambimag",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ambimag | Consultoría Ambiental Integral en Ecuador",
+    description:
+      "Acompañamos a empresas e instituciones a desarrollar su crecimiento ambiental sustentable. +10 años siendo líderes en consultoría y capacitación corporativa.",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="es" suppressHydrationWarning>
+      <head>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="application-name" content="Ambimag" />
+      </head>
+      <body
+        className={`${inter.variable} ${playfair.variable} antialiased bg-background text-foreground`}
+      >
+        {children}
+        <Toaster />
+        {/* Service Worker Registration */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                  navigator.serviceWorker.register('/sw.js').then(
+                    function(registration) {
+                      console.log('SW registrado:', registration.scope);
+                    },
+                    function(err) {
+                      console.log('SW error:', err);
+                    }
+                  );
+                });
+              }
+            `,
+          }}
+        />
+      </body>
+    </html>
+  );
+}
