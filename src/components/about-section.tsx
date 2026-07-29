@@ -73,10 +73,10 @@ export function AboutSection() {
           >
             <div className="bg-gradient-to-br from-[#1B7340] to-[#145C33] rounded-xl p-6 sm:p-8 text-white shadow-lg h-full flex flex-col">
               <h3 className="font-[family-name:var(--font-playfair)] text-xl sm:text-2xl font-bold mb-2">
-                Contacte al Gerente General
+                Contáctanos
               </h3>
               <p className="text-white/80 text-sm mb-6 leading-relaxed">
-                Hablar directamente con Galo Estupiñán Vera es la forma más rápida y efectiva de iniciar su proyecto de consultoría ambiental. Sin intermediarios, sin burocracia interna.
+                Hablar directamente con nuestro equipo de especialistas es la forma más rápida y efectiva de iniciar su proyecto de consultoría ambiental o capacitación. Sin intermediarios, sin burocracia interna.
               </p>
 
               {/* Contact items */}
@@ -92,6 +92,7 @@ export function AboutSection() {
                   <Mail className="w-5 h-5 text-[#C49B3C]" />
                   <div>
                     <p className="text-white/60 text-xs">Correo electrónico</p>
+                    <p className="text-white font-semibold">gestupinan@consultorambimag.com.ec</p>
                     <p className="text-white font-semibold">galogestupinan@gmail.com</p>
                   </div>
                 </div>
