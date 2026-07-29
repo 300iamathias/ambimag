@@ -2,6 +2,7 @@
 
 import { ShieldCheck, Award, Users, TrendingUp, Clock, CheckCircle2, MapPin, Globe } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const TRUST_ITEMS = [
   {
@@ -177,34 +178,61 @@ export function AuthoritySection() {
           </motion.div>
         </div>
 
-        {/* Differentiators */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-50px' }}
-          transition={{ duration: 0.6 }}
-          className="bg-white rounded-xl p-6 sm:p-8 shadow-md border border-gray-100"
-        >
-          <h3 className="font-[family-name:var(--font-playfair)] text-xl sm:text-2xl font-bold text-gray-900 mb-2 text-center">
-            ¿Por qué elegir Ambimag?
-          </h3>
-          <p className="text-gray-500 text-sm mb-6 text-center">
-            Nos diferenciamos por la cercanía, la agilidad y el compromiso real con el resultado de cada proyecto.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {DIFFERENTIATORS.map((item) => (
-              <div key={item.title} className="flex gap-3 sm:flex-col sm:gap-2 sm:text-center">
-                <div className="w-10 h-10 rounded-lg bg-[#1B7340]/10 flex items-center justify-center flex-shrink-0 sm:mx-auto mt-0.5">
-                  <item.icon className="w-5 h-5 text-[#1B7340]" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 text-sm">{item.title}</h4>
-                  <p className="text-gray-500 text-sm mt-1 leading-relaxed">{item.text}</p>
-                </div>
+        {/* Differentiators with team photo */}
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+          {/* Team photo */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: '-50px' }}
+            transition={{ duration: 0.6 }}
+            className="lg:col-span-2"
+          >
+            <div className="relative rounded-xl overflow-hidden shadow-lg border border-gray-100 h-full min-h-[300px]">
+              <Image
+                src="/images/authority-team.jpg"
+                alt="Equipo Ambimag - Participación en Héroes del Comercio, Cámara de Comercio de Guayaquil"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 40vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-4">
+                <p className="text-white text-sm font-medium">Galo Estupiñán Vera</p>
+                <p className="text-white/70 text-xs">Gerente General — Ambimag Ecuador</p>
               </div>
-            ))}
-          </div>
-        </motion.div>
+            </div>
+          </motion.div>
+
+          {/* Differentiators */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-50px' }}
+            transition={{ duration: 0.6 }}
+            className="lg:col-span-3 bg-white rounded-xl p-6 sm:p-8 shadow-md border border-gray-100"
+          >
+            <h3 className="font-[family-name:var(--font-playfair)] text-xl sm:text-2xl font-bold text-gray-900 mb-2">
+              ¿Por qué elegir Ambimag?
+            </h3>
+            <p className="text-gray-500 text-sm mb-6">
+              Nos diferenciamos por la cercanía, la agilidad y el compromiso real con el resultado de cada proyecto.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              {DIFFERENTIATORS.map((item) => (
+                <div key={item.title} className="flex gap-3 sm:gap-3">
+                  <div className="w-10 h-10 rounded-lg bg-[#1B7340]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <item.icon className="w-5 h-5 text-[#1B7340]" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 text-sm">{item.title}</h4>
+                    <p className="text-gray-500 text-sm mt-1 leading-relaxed">{item.text}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
 
         {/* Location badge */}
         <motion.div

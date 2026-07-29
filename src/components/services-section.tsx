@@ -3,11 +3,13 @@
 import { Leaf, FileCheck, Scale, ArrowRight, Phone, Briefcase, GraduationCap } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
+import Image from 'next/image';
 
 const SERVICES = [
   {
     icon: Leaf,
     title: 'Consultoría Ambiental Integral',
+    image: '/images/service-consulting.jpg',
     description:
       'Diagnósticos ambientales completos, estudios de impacto ambiental (EsIA), evaluaciones de riesgo y planes de manejo ambiental (PMA). Diseñamos estrategias que le permiten operar dentro del marco legal ecuatoriano sin interrupciones ni sorpresas regulatorias. Acompañamos a empresas e instituciones a desarrollar su crecimiento ambiental sustentable alineado con las normas locales e internacionales.',
     features: ['Estudios de Impacto Ambiental', 'Plan de Manejo Ambiental', 'Diagnóstico Ambiental', 'Línea Base Ambiental', 'Evaluación de Riesgos'],
@@ -16,6 +18,7 @@ const SERVICES = [
   {
     icon: FileCheck,
     title: 'Gestión de Licencias y Permisos',
+    image: '/images/service-advisory.jpg',
     description:
       'Tramitamos y obtenemos licencias ambientales de operación, permisos de descarga, autorizaciones del Ministerio del Ambiente, Agua y Transición Ecológica (MAATE), registro de generadores de residuos y toda la documentación regulatoria que su actividad exige. Gestionamos cada paso del proceso hasta la obtención final del documento.',
     features: ['Licencia Ambiental de Operación', 'Permisos MAATE', 'Registro de Generadores', 'Certificaciones ISO 14001', 'Autorizaciones de Descarga'],
@@ -24,6 +27,7 @@ const SERVICES = [
   {
     icon: Scale,
     title: 'Normativa y Cumplimiento Legal',
+    image: '/images/service-fieldwork.jpg',
     description:
       'Auditorías de cumplimiento ambiental, revisión de normativa vigente, elaboración de protocolos de autocontrol y supervisión, y acompañamiento en procesos de fiscalización. Le aseguramos que su empresa cumple cada requisito antes de que las autoridades lo exigen. Especialidades en seguridad, higiene, salud y normativa ambiental.',
     features: ['Auditorías Ambientales', 'Protocolos de Autocontrol', 'Asesoría Legal Ambiental', 'Prevención de Infracciones', 'Seguridad e Higiene Industrial'],
@@ -32,6 +36,7 @@ const SERVICES = [
   {
     icon: Briefcase,
     title: 'Gestión 360 — Proyectos Contractuales',
+    image: '/images/service-construction.jpg',
     description:
       'Administración integral de proyectos ambientales contractuales: desde la planificación y estructuración del contrato hasta la ejecución, seguimiento y cierre. Coordinamos todos los actores, plazos y entregables para que su proyecto cumpla con los estándares ambientales y contractuales sin desviaciones. Ideal para obras civiles, industriales y de infraestructura.',
     features: ['Administración de Proyectos', 'Seguimiento de Entregables', 'Coordinación Multidisciplinaria', 'Cumplimiento Contractual Ambiental', 'Reportes de Avance'],
@@ -40,6 +45,7 @@ const SERVICES = [
   {
     icon: GraduationCap,
     title: 'Capacitación Profesional',
+    image: '/images/service-training.jpg',
     description:
       'Programas de formación y capacitación corporativa en materia ambiental, seguridad, salud ocupacional y normativa vigente. Diseñamos cursos presenciales y virtuales adaptados a las necesidades de su equipo, con contenido práctico y enfocado en el cumplimiento real. Más de 10 años formando profesionales en el sector ambiental ecuatoriano.',
     features: ['Cursos de Normativa Ambiental', 'Capacitación en SST', 'Talleres de Gestión de Desechos', 'Formación en Ingeniería Ambiental', 'Programas Corporativos a Medida'],
@@ -48,6 +54,7 @@ const SERVICES = [
   {
     icon: Leaf,
     title: 'Ingeniería Ambiental y Desechos',
+    image: '/images/service-engineering.jpg',
     description:
       'Soluciones de ingeniería ambiental para el manejo, tratamiento y disposición final de residuos y desechos industriales. Diseñamos sistemas de gestión de residuos, planes de minimización y estrategias de economía circular adaptadas a su proceso productivo. Cumplimiento garantizado con la normativa de desechos peligrosos y no peligrosos del Ecuador.',
     features: ['Gestión de Residuos Industriales', 'Planes de Minimización', 'Economía Circular', 'Manejo de Desechos Peligrosos', 'Tratamiento de Efluentes'],
@@ -110,12 +117,18 @@ export function ServicesSection() {
         >
           {SERVICES.map((service) => (
             <motion.div key={service.title} variants={cardVariants}>
-              <Card className="group h-full border-0 shadow-md hover:shadow-xl transition-all duration-300 rounded-xl overflow-hidden bg-white">
-                {/* Card top accent */}
-                <div
-                  className="h-1.5 w-full"
-                  style={{ backgroundColor: service.accent }}
-                />
+              <Card className="group h-full border-0 transition-all duration-300 rounded-[15px] bg-white" style={{ boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}>
+                {/* Service photo */}
+                <div className="w-full flex items-center justify-center bg-white p-[10px]" style={{ maxHeight: '260px', borderRadius: '15px 15px 0 0' }}>
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    width={600}
+                    height={400}
+                    className="w-full h-auto object-contain"
+                    style={{ maxHeight: '240px', borderRadius: '12px 12px 0 0' }}
+                  />
+                </div>
                 <CardContent className="p-6 sm:p-8">
                   {/* Icon */}
                   <div

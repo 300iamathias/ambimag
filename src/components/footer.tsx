@@ -158,9 +158,12 @@ export function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/15">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-white/50 text-xs sm:text-sm">
-            &copy; {new Date().getFullYear()} Ambiental Integral Ambimag Cía. Ltda. — Todos los derechos reservados.
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 pr-20 sm:pr-24 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="text-white/50 text-xs sm:text-sm text-center sm:text-left">
+            &copy; {new Date().getFullYear()} Ambiental Integral Ambimag Cía. Ltda. — Todos los derechos reservados. |{' '}
+            <a href="https://jimbra.net" target="_blank" rel="noopener noreferrer" className="hover:text-white/70 transition-colors">
+              Desarrollado por Jimbra
+            </a>
           </p>
           <div className="flex items-center gap-4">
             {SOCIAL_LINKS.map((social) => (
@@ -176,9 +179,6 @@ export function Footer() {
               </a>
             ))}
           </div>
-          <a href="https://jimbra.net" target="_blank" rel="noopener noreferrer" className="text-white/50 hover:text-white/70 text-xs sm:text-sm transition-colors">
-            Desarrollado por Jimbra
-          </a>
         </div>
       </div>
     </footer>
