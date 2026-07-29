@@ -1,7 +1,6 @@
 'use client';
 
 import { Leaf, Phone, Mail, MapPin, Instagram, Linkedin, Facebook } from 'lucide-react';
-import Image from 'next/image';
 
 const WHATSAPP_NUMBER = '593994670519';
 const SOCIAL_LINKS = [
@@ -20,16 +19,7 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <div className="mb-4">
-              <Image
-                src="/ambimag-logo-footer.png"
-                alt="Ambimag Ecuador - Soluciones Integrales"
-                width={218}
-                height={86}
-                className="h-16 sm:h-20 w-auto object-contain"
-              />
-            </div>
-            <p className="text-white/70 text-sm leading-relaxed mt-3">
+            <p className="text-white/70 text-sm leading-relaxed">
               Acompañamos a empresas e instituciones a desarrollar su crecimiento ambiental sustentable alineado con las normas regulatorias locales e internacionales.
             </p>
             {/* Social icons */}

@@ -37,11 +37,12 @@ export function MapSection() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-2"
           >
-            <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200 h-[350px] sm:h-[420px]">
+            <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200 h-[300px] sm:h-[350px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7!2d-79.9334!3d-2.1847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6c4b5e6e5e5e%3A0x1a2b3c4d5e6f7a8b!2sCarchi%20609%20y%201ro.%20de%20Mayo%2C%20Guayaquil%2C%20Ecuador!5e0!3m2!1ses!2sec!4v1700000000000!5m2!1ses!2sec"
+                src="https://maps.google.com/maps?q=-2.189444,-79.895278&t=&z=18&ie=UTF8&iwloc=&output=embed"
                 width="100%"
-                height="100%"
+                height="300"
+                frameBorder="0"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
