@@ -103,10 +103,10 @@ export function Footer() {
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-[#C49B3C]" />
                 <a
-                  href="mailto:galogestupinan@gmail.com"
+                  href="mailto:gestupinan@consultorambimag.com.ec"
                   className="text-white/90 hover:text-white text-sm font-medium transition-colors"
                 >
-                  galogestupinan@gmail.com
+                  gestupinan@consultorambimag.com.ec
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -114,10 +114,6 @@ export function Footer() {
                 <span className="text-white/70 text-sm">Carchi 609 y 1ro. de Mayo, Guayaquil</span>
               </li>
             </ul>
-            <div className="mt-4 bg-white/10 rounded-lg p-3">
-              <p className="text-white text-sm font-semibold">Galo Estupiñán Vera</p>
-              <p className="text-white/60 text-xs">Gerente General</p>
-            </div>
           </div>
 
           {/* Quick links + Social */}

@@ -191,7 +191,7 @@ export function AuthoritySection() {
             <div className="relative rounded-xl overflow-hidden shadow-lg border border-gray-100 h-full min-h-[300px]">
               <Image
                 src="/images/authority-team.jpg"
-                alt="Equipo Ambimag - Participación en Héroes del Comercio, Cámara de Comercio de Guayaquil"
+                alt="Equipo Ambimag en sesión de auditoría corporativa con AkzoNobel"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 40vw"
