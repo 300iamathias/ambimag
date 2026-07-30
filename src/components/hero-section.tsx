@@ -65,7 +65,7 @@ export function HeroSection() {
                   className="group flex items-center gap-3 bg-white hover:bg-gray-50 text-[#1B7340] px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-semibold text-base sm:text-lg transition-all shadow-lg hover:shadow-xl hover:scale-[1.02]"
                 >
                   <Phone className="w-5 h-5 group-hover:animate-pulse" />
-                  Escríbame al WhatsApp
+                  Contáctanos por WhatsApp
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <a

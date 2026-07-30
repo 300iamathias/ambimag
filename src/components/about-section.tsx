@@ -149,7 +149,7 @@ export function AboutSection() {
                   className="group flex items-center justify-center gap-3 bg-white hover:bg-gray-50 text-[#1B7340] px-6 py-4 rounded-xl font-semibold text-base transition-all shadow-md hover:shadow-lg w-full"
                 >
                   <Phone className="w-5 h-5" />
-                  Escríbame al WhatsApp
+                  Contáctanos por WhatsApp
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <p className="mt-3 text-center text-xs text-white/50">
