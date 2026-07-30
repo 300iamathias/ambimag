@@ -117,19 +117,40 @@ export function ServicesSection() {
         >
           {SERVICES.map((service) => (
             <motion.div key={service.title} variants={cardVariants}>
-              <Card className="group h-full border-0 transition-all duration-300 rounded-[15px] bg-white" style={{ boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}>
+              <Card
+                className="group h-full border-0 transition-all duration-300"
+                style={{
+                  borderRadius: '16px',
+                  overflow: 'hidden',
+                  boxShadow: '0 10px 30px rgba(0, 0, 0, 0.06)',
+                  border: '1px solid rgba(0, 0, 0, 0.05)',
+                  backgroundColor: '#ffffff',
+                  transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-6px)';
+                  e.currentTarget.style.boxShadow = '0 15px 35px rgba(0, 0, 0, 0.1)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.06)';
+                }}
+              >
                 {/* Service photo */}
-                <div className="w-full flex items-center justify-center bg-white p-[10px]" style={{ maxHeight: '260px', borderRadius: '15px 15px 0 0' }}>
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    width={600}
-                    height={400}
-                    className="w-full h-auto object-contain"
-                    style={{ maxHeight: '240px', borderRadius: '12px 12px 0 0' }}
-                  />
-                </div>
-                <CardContent className="p-6 sm:p-8">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  width={600}
+                  height={400}
+                  style={{
+                    borderRadius: '12px 12px 0 0',
+                    width: '100%',
+                    height: '220px',
+                    objectFit: 'cover',
+                    display: 'block',
+                  }}
+                />
+                <CardContent style={{ padding: '24px' }}>
                   {/* Icon */}
                   <div
                     className="w-12 h-12 rounded-xl flex items-center justify-center mb-5 shadow-sm"
