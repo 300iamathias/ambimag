@@ -214,7 +214,7 @@ export function ServicesSection() {
             className="inline-flex items-center gap-3 bg-[#1B7340] hover:bg-[#145C33] text-white px-8 py-4 rounded-xl font-semibold text-base sm:text-lg transition-all shadow-lg hover:shadow-xl hover:scale-[1.02]"
           >
             <Phone className="w-5 h-5" />
-            Hable con Galo Estupiñán — Gerente General
+            Contacta a uno de nuestros expertos
           </a>
         </motion.div>
       </div>
