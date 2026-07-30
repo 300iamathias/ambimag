@@ -9,7 +9,7 @@ const TRUST_ITEMS = [
     icon: ShieldCheck,
     value: '10+',
     label: 'Años de experiencia',
-    description: 'Más de una década siendo líderes en consultoría ambiental para empresas y capacitación corporativa en Ecuador.',
+    description: 'Más de una década siendo líderes en consultoría y asesoría para empresas y capacitación corporativa en Ecuador.',
   },
   {
     icon: Award,
@@ -21,13 +21,13 @@ const TRUST_ITEMS = [
     icon: Users,
     value: '100%',
     label: 'Cumplimiento normativo',
-    description: 'Nuestros clientes obtienen y mantienen sus licencias y permisos ambientales sin observaciones ni retrasos.',
+    description: 'Nuestros clientes obtienen y mantienen sus licencias, permisos y certificaciones sin observaciones ni retrasos.',
   },
   {
     icon: TrendingUp,
     value: '2h',
     label: 'Tiempo de respuesta',
-    description: 'Respuesta garantizada en menos de 2 horas. Sabemos que su tiempo es valioso y las urgencias ambientales no esperan.',
+    description: 'Respuesta garantizada en menos de 2 horas. Sabemos que su tiempo es valioso y las urgencias no esperan.',
   },
 ];
 
@@ -35,13 +35,13 @@ const SPECIALTIES = [
   'Ambiental',
   'Higiene Industrial',
   'Salud Ocupacional',
-  'Normativa Ambiental',
-  'Medio Ambiente',
+  'Calidad',
+  'Seguridad',
   'Seguridad Industrial',
   'Manufactura',
   'Gestión de Desechos',
   'Capacitación',
-  'Ingeniería Ambiental',
+  'Ingeniería',
 ];
 
 const CLIENT_TYPES = [
@@ -67,7 +67,7 @@ const DIFFERENTIATORS = [
   {
     icon: ShieldCheck,
     title: 'Conocimiento profundo del MAATE',
-    text: 'Años de relación con el Ministerio del Ambiente nos permiten anticipar requisitos y evitar observaciones.',
+    text: 'Años de relación con las autoridades nos permiten anticipar requisitos y evitar observaciones.',
   },
   {
     icon: Globe,
@@ -138,7 +138,7 @@ export function AuthoritySection() {
               Especialidades
             </h3>
             <p className="text-gray-500 text-sm mb-6">
-              Nuestro equipo abarca todas las áreas críticas de la gestión ambiental, seguridad y salud ocupacional en Ecuador.
+              Nuestro equipo abarca todas las áreas críticas de la gestión ambiental, calidad y seguridad y salud ocupacional en Ecuador.
             </p>
             <div className="flex flex-wrap gap-2">
               {SPECIALTIES.map((specialty) => (
@@ -165,7 +165,7 @@ export function AuthoritySection() {
               Sectores que atendemos
             </h3>
             <p className="text-gray-500 text-sm mb-6">
-              Trabajamos con empresas de todos los tamaños y sectores en Ecuador que necesitan cumplir con la normativa ambiental vigente.
+              Trabajamos con empresas de todos los tamaños y sectores en Ecuador que necesitan cumplir con la normativa vigente.
             </p>
             <div className="grid grid-cols-2 gap-3">
               {CLIENT_TYPES.map((client) => (

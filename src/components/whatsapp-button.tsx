@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
 const WHATSAPP_NUMBER = '593994670519';
-const WHATSAPP_MESSAGE = 'Hola, me interesa conocer más sobre los servicios de consultoría ambiental de Ambimag. ¿Podrían atendarme?';
+const WHATSAPP_MESSAGE = 'Hola, me interesa conocer más sobre los servicios de consultoría y asesoría de Ambimag. ¿Podrían atenderme?';
 
 export function WhatsAppButton() {
   const [isVisible, setIsVisible] = useState(false);
@@ -41,7 +41,7 @@ export function WhatsAppButton() {
                 transition={{ duration: 0.3 }}
                 className="bg-white shadow-lg rounded-lg p-3 max-w-[220px] text-sm text-gray-700 border border-gray-100"
               >
-                <p className="font-semibold text-[#1B7340]">¿Necesita consultoría ambiental?</p>
+                <p className="font-semibold text-[#1B7340]">¿Necesita asesoría profesional?</p>
                 <p className="mt-1 text-gray-500 text-xs">Escríbanos ahora, le atendemos directamente.</p>
                 <button
                   onClick={() => setShowTooltip(false)}
@@ -59,7 +59,7 @@ export function WhatsAppButton() {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Contactar por WhatsApp con Galo Estupiñán Vera, Gerente General de Ambimag"
+            aria-label="Contactar por WhatsApp con Ambimag"
             className="group relative flex items-center justify-center w-14 h-14 sm:w-[60px] sm:h-[60px] rounded-full bg-[#25D366] shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
           >
             <MessageCircle className="w-6 h-6 sm:w-7 sm:h-7 text-white fill-white" />

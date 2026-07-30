@@ -7,7 +7,7 @@ import Image from 'next/image';
 const WHATSAPP_NUMBER = '593994670519';
 
 export function HeroSection() {
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hola Galo, necesito consultoría ambiental para mi empresa en Ecuador. ¿Podemos conversar?')}`;
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hola, necesito asesoría para mi empresa en Ecuador. ¿Podemos conversar?')}`;
 
   return (
     <section className="relative overflow-hidden">
@@ -42,18 +42,18 @@ export function HeroSection() {
               {/* Badge */}
               <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full text-white/90 text-sm font-medium mb-6 border border-white/20">
                 <ShieldCheck className="w-4 h-4 text-[#C49B3C]" />
-                Consultoría Ambiental Certificada en Ecuador
+                Consultoría y Asesoría Integral en Ecuador
               </div>
 
               {/* Main headline */}
               <h1 className="font-[family-name:var(--font-playfair)] text-3xl sm:text-4xl md:text-[2.75rem] lg:text-5xl xl:text-[3.25rem] font-bold text-white leading-[1.15] tracking-tight">
-                Cumpla la normativa ambiental.
+                Cumpla la normativa vigente.
                 <span className="block mt-2 text-[#C49B3C]">Evite multas. Proteja su inversión.</span>
               </h1>
 
               {/* Subtitle */}
               <p className="mt-5 sm:mt-6 text-base sm:text-lg text-white/80 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                Acompañamos a empresas e instituciones a desarrollar su crecimiento ambiental sustentable alineado con las normas regulatorias locales e internacionales. +10 años siendo líderes en consultoría y capacitación corporativa.
+                Acompañamos a empresas e instituciones a desarrollar su crecimiento alineado con las normas regulatorias locales e internacionales en Calidad, Seguridad y Medio Ambiente. +10 años siendo líderes en consultoría y capacitación corporativa.
               </p>
 
               {/* CTAs */}
@@ -106,7 +106,7 @@ export function HeroSection() {
                     />
                   </div>
                   <div>
-                    <h3 className="text-white font-semibold text-lg">Ambiental Integral Ambimag</h3>
+                    <h3 className="text-white font-semibold text-lg">Ambimag — Asesoría Integral</h3>
                     <p className="text-white/60 text-sm">Cía. Ltda. — Soluciones Integrales</p>
                   </div>
                 </div>

@@ -22,7 +22,7 @@ const FAQS = [
     answer: 'El Estudio de Impacto Ambiental (EsIA) es un documento técnico que evalúa los efectos potenciales de un proyecto sobre el medio ambiente antes de su ejecución. Es el requisito principal para obtener la Licencia Ambiental. El Plan de Manejo Ambiental (PMA) es parte del EsIA y detalla las medidas de prevención, mitigación, compensación y monitoreo que se implementarán durante la vida del proyecto. En Ambimap elaboramos ambos documentos de forma integrada, asegurando que cumplan con todos los requisitos del MAATE.',
   },
   {
-    question: '¿Cómo puedo iniciar un proyecto de consultoría ambiental con Ambimag?',
+    question: '¿Cómo puedo iniciar un proyecto de consultoría con Ambimag?',
     answer: 'El proceso es simple y directo: escriba al WhatsApp del Gerente General, Galo Estupiñán Vera (+593 99 467 0519), y en menos de 2 horas recibirá una respuesta con una propuesta初步. No necesita intermediarios ni burocracia interna. En la primera conversación evaluaremos sus necesidades, le explicaremos el proceso y le entregaremos un cronograma y presupuesto sin compromiso. La consulta inicial es gratuita.',
   },
   {
@@ -85,7 +85,7 @@ export function FAQSection() {
             <span className="text-[#1B7340]"> dudas</span>
           </h2>
           <p className="mt-4 text-gray-500 max-w-xl mx-auto text-base leading-relaxed">
-            Las preguntas más comunes sobre consultoría ambiental y nuestros servicios. ¿No encuentra su respuesta? Escríbanos directamente.
+            Las preguntas más comunes sobre consultoría y nuestros servicios. ¿No encuentra su respuesta? Escríbanos directamente.
           </p>
         </motion.div>
 

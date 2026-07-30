@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const WHATSAPP_NUMBER = '593994670519';
 
 export function CTASection() {
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hola Galo, necesito consultoría ambiental urgente para mi empresa. ¿Podemos conversar hoy?')}`;
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hola, necesito asesoría urgente para mi empresa. ¿Podemos conversar hoy?')}`;
 
   return (
     <section className="relative py-16 sm:py-20 bg-gradient-to-r from-[#1B7340] to-[#0E8A7D] overflow-hidden">

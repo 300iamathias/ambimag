@@ -20,7 +20,7 @@ export function Footer() {
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <p className="text-white/70 text-sm leading-relaxed">
-              Acompañamos a empresas e instituciones a desarrollar su crecimiento ambiental sustentable alineado con las normas regulatorias locales e internacionales.
+              Acompañamos a empresas e instituciones a desarrollar su crecimiento alineado con las normas regulatorias locales e internacionales en Calidad, Seguridad y Medio Ambiente.
             </p>
             {/* Social icons */}
             <div className="flex items-center gap-3 mt-5">
@@ -52,32 +52,42 @@ export function Footer() {
               </li>
               <li>
                 <a href="#servicios" className="text-white/70 hover:text-white text-sm transition-colors">
-                  Gestión de Licencias y Permisos
+                  Gestión de Calidad y BPM
                 </a>
               </li>
               <li>
                 <a href="#servicios" className="text-white/70 hover:text-white text-sm transition-colors">
-                  Normativa y Cumplimiento Legal
+                  Seguridad y Salud Ocupacional
                 </a>
               </li>
               <li>
                 <a href="#servicios" className="text-white/70 hover:text-white text-sm transition-colors">
-                  Estudios de Impacto Ambiental
+                  Gestión 360 / Proyectos Contractuales
                 </a>
               </li>
               <li>
                 <a href="#servicios" className="text-white/70 hover:text-white text-sm transition-colors">
-                  Plan de Manejo Ambiental
+                  Capacitación y Asesoría
                 </a>
               </li>
               <li>
                 <a href="#servicios" className="text-white/70 hover:text-white text-sm transition-colors">
-                  Gestión 360 — Proyectos Contractuales
+                  Gestión Ambiental
                 </a>
               </li>
               <li>
                 <a href="#servicios" className="text-white/70 hover:text-white text-sm transition-colors">
-                  Capacitación Profesional
+                  Seguridad Alimentaria
+                </a>
+              </li>
+              <li>
+                <a href="#servicios" className="text-white/70 hover:text-white text-sm transition-colors">
+                  Sistema de Gestión de Talento Humano
+                </a>
+              </li>
+              <li>
+                <a href="#servicios" className="text-white/70 hover:text-white text-sm transition-colors">
+                  Asesoría Jurídica
                 </a>
               </li>
             </ul>
@@ -107,6 +117,15 @@ export function Footer() {
                   className="text-white/90 hover:text-white text-sm font-medium transition-colors"
                 >
                   gestupinan@consultorambimag.com.ec
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail className="w-4 h-4 text-[#C49B3C]" />
+                <a
+                  href="mailto:galogestupinan@gmail.com"
+                  className="text-white/90 hover:text-white text-sm font-medium transition-colors"
+                >
+                  galogestupinan@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -144,7 +163,7 @@ export function Footer() {
               </li>
               <li>
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-[#25D366] hover:text-[#25D366]/80 text-sm font-medium transition-colors">
-                  WhatsApp directo
+Contáctanos
                 </a>
               </li>
             </ul>

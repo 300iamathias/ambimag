@@ -1,6 +1,6 @@
 'use client';
 
-import { Leaf, FileCheck, Scale, ArrowRight, Phone, Briefcase, GraduationCap } from 'lucide-react';
+import { Leaf, Scale, ArrowRight, Phone, Briefcase, GraduationCap, Shield, UtensilsCrossed, Users, TreePine, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
 import Image from 'next/image';
@@ -11,54 +11,81 @@ const SERVICES = [
     title: 'Consultoría Ambiental Integral',
     image: '/images/service-consulting.jpg',
     description:
-      'Diagnósticos ambientales completos, estudios de impacto ambiental (EsIA), evaluaciones de riesgo y planes de manejo ambiental (PMA). Diseñamos estrategias que le permiten operar dentro del marco legal ecuatoriano sin interrupciones ni sorpresas regulatorias. Acompañamos a empresas e instituciones a desarrollar su crecimiento ambiental sustentable alineado con las normas locales e internacionales.',
-    features: ['Estudios de Impacto Ambiental', 'Plan de Manejo Ambiental', 'Diagnóstico Ambiental', 'Línea Base Ambiental', 'Evaluación de Riesgos'],
+      'Diagnósticos, auditorías y gestión ambiental. Planes de manejo ambiental, monitoreo, relación con la autoridad ambiental, certificaciones ISO y BASC. Acompañamos a empresas e instituciones a desarrollar su crecimiento sustentable alineado con las normas regulatorias locales e internacionales.',
+    features: ['Planes de Manejo Ambiental', 'Monitoreo Ambiental', 'Certificaciones ISO / BASC', 'Buenas Prácticas de Manufactura', 'Relación con Autoridad Ambiental'],
     accent: '#1B7340',
   },
   {
-    icon: FileCheck,
-    title: 'Gestión de Licencias y Permisos',
+    icon: Award,
+    title: 'Gestión de Calidad y BPM',
     image: '/images/service-advisory.jpg',
     description:
-      'Tramitamos y obtenemos licencias ambientales de operación, permisos de descarga, autorizaciones del Ministerio del Ambiente, Agua y Transición Ecológica (MAATE), registro de generadores de residuos y toda la documentación regulatoria que su actividad exige. Gestionamos cada paso del proceso hasta la obtención final del documento.',
-    features: ['Licencia Ambiental de Operación', 'Permisos MAATE', 'Registro de Generadores', 'Certificaciones ISO 14001', 'Autorizaciones de Descarga'],
+      'Implementación, mantenimiento y fortalecimiento de sistemas de gestión de calidad como ISO 9001:2015. Buenas Prácticas de Manufactura farmacéutica, alimentaria y cosméticos. Auditorías internas, a proveedores y reingeniería de procesos para la mejora continua.',
+    features: ['ISO 9001:2015', 'BPM Farmacéutica', 'BPM Alimentaria y Cosméticos', 'BASC: Seguridad en Comercio Exterior', 'Auditorías y Reingeniería de Procesos'],
     accent: '#0E8A7D',
   },
   {
-    icon: Scale,
-    title: 'Normativa y Cumplimiento Legal',
+    icon: Shield,
+    title: 'Seguridad y Salud Ocupacional',
     image: '/images/service-fieldwork.jpg',
     description:
-      'Auditorías de cumplimiento ambiental, revisión de normativa vigente, elaboración de protocolos de autocontrol y supervisión, y acompañamiento en procesos de fiscalización. Le aseguramos que su empresa cumple cada requisito antes de que las autoridades lo exigen. Especialidades en seguridad, higiene, salud y normativa ambiental.',
-    features: ['Auditorías Ambientales', 'Protocolos de Autocontrol', 'Asesoría Legal Ambiental', 'Prevención de Infracciones', 'Seguridad e Higiene Industrial'],
+      'Asesoría integral en Sistema de Gestión SST basado en ISO 45001:2018. Conformación de Comité Paritario, elaboración de matrices de riesgo, fichas médicas, plan de vigilancia de la salud y programa de prevención de consumo de drogas.',
+    features: ['ISO 45001:2018', 'Matriz de Riesgos y Peligros', 'Comité Paritario de Seguridad', 'Fichas Médicas y Vigilancia', 'Prevención de Consumo de Drogas'],
     accent: '#C49B3C',
   },
   {
     icon: Briefcase,
-    title: 'Gestión 360 — Proyectos Contractuales',
+    title: 'Gestión 360 / Proyectos Contractuales',
     image: '/images/service-construction.jpg',
     description:
-      'Administración integral de proyectos ambientales contractuales: desde la planificación y estructuración del contrato hasta la ejecución, seguimiento y cierre. Coordinamos todos los actores, plazos y entregables para que su proyecto cumpla con los estándares ambientales y contractuales sin desviaciones. Ideal para obras civiles, industriales y de infraestructura.',
-    features: ['Administración de Proyectos', 'Seguimiento de Entregables', 'Coordinación Multidisciplinaria', 'Cumplimiento Contractual Ambiental', 'Reportes de Avance'],
+      'Optimización y gestión de procesos, negociaciones gubernamentales y municipales. Consultoría civil: estudios estructurales, construcción y fiscalización. Asesoría legal en legislación ambiental y civil/comercial. Maquila, formulación y representación técnica química.',
+    features: ['Optimización de Procesos', 'Negociaciones Gubernamentales', 'Consultoría Civil y Fiscalización', 'Legislación Ambiental y Civil', 'Maquila y Representación Técnica'],
     accent: '#2D6A4F',
   },
   {
     icon: GraduationCap,
-    title: 'Capacitación Profesional',
+    title: 'Capacitación y Asesoría',
     image: '/images/service-training.jpg',
     description:
-      'Programas de formación y capacitación corporativa en materia ambiental, seguridad, salud ocupacional y normativa vigente. Diseñamos cursos presenciales y virtuales adaptados a las necesidades de su equipo, con contenido práctico y enfocado en el cumplimiento real. Más de 10 años formando profesionales en el sector ambiental ecuatoriano.',
-    features: ['Cursos de Normativa Ambiental', 'Capacitación en SST', 'Talleres de Gestión de Desechos', 'Formación en Ingeniería Ambiental', 'Programas Corporativos a Medida'],
+      'Programas de formación y capacitación corporativa en Sistemas de Calidad, Seguridad y Salud Ocupacional, Ambientales, Consultoría y Proyectos, Gestión de Proyectos y Metodologías Agile. Más de 10 años formando profesionales en el sector ecuatoriano.',
+    features: ['Sistemas de Calidad (BPM, ISO)', 'Seguridad y Salud Ocupacional', 'Ambientales', 'Gestión de Proyectos', 'Metodologías Agile'],
     accent: '#7C4A1E',
   },
   {
-    icon: Leaf,
-    title: 'Ingeniería Ambiental y Desechos',
+    icon: TreePine,
+    title: 'Gestión Ambiental',
     image: '/images/service-engineering.jpg',
     description:
-      'Soluciones de ingeniería ambiental para el manejo, tratamiento y disposición final de residuos y desechos industriales. Diseñamos sistemas de gestión de residuos, planes de minimización y estrategias de economía circular adaptadas a su proceso productivo. Cumplimiento garantizado con la normativa de desechos peligrosos y no peligrosos del Ecuador.',
-    features: ['Gestión de Residuos Industriales', 'Planes de Minimización', 'Economía Circular', 'Manejo de Desechos Peligrosos', 'Tratamiento de Efluentes'],
+      'Legislación ambiental: diagnóstico de impactos ambientales, estudios de impacto ambiental, auditorías ambientales de cumplimiento. Producción más limpia, manejo de desechos sólidos y sistemas de tratamiento de aguas residuales.',
+    features: ['Estudios de Impacto Ambiental', 'Auditorías de Cumplimiento', 'Producción más Limpia', 'Manejo de Desechos Sólidos', 'Tratamiento de Aguas Residuales'],
     accent: '#1B7340',
+  },
+  {
+    icon: UtensilsCrossed,
+    title: 'Seguridad Alimentaria',
+    image: '/images/service-food-safety.jpg',
+    description:
+      'Asesoría especializada en seguridad alimentaria con base en las normas BPM, HACCP y BRC. Acompañamos a empresas alimentarias a garantizar la inocuidad de sus productos y cumplir con los estándares nacionales e internacionales de calidad.',
+    features: ['BPM — Buenas Prácticas de Manufactura', 'HACCP — Análisis de Peligros', 'BRC — Norma Global de Seguridad', 'Auditorías de Cumplimiento', 'Capacitación Interna'],
+    accent: '#0E8A7D',
+  },
+  {
+    icon: Users,
+    title: 'Sistema de Gestión de Talento Humano',
+    image: '/images/service-talent.jpg',
+    description:
+      'Elaboración de procedimientos y registros relativos a la selección, contratación, formación y evaluación del talento humano. Diseñamos sistemas que optimizan la gestión de personas y fortalecen el compromiso organizacional.',
+    features: ['Selección y Contratación', 'Formación y Capacitación', 'Evaluación del Desempeño', 'Procedimientos y Registros', 'Compromiso Organizacional'],
+    accent: '#2D6A4F',
+  },
+  {
+    icon: Scale,
+    title: 'Asesoría Jurídica',
+    image: '/images/service-legal.jpg',
+    description:
+      'Servicio legal integral con cobertura en derecho penal, civil, ambiental, laboral y societario. Nuestro equipo multidisciplinario de profesionales brinda acompañamiento legal estratégico para la toma de decisiones empresariales.',
+    features: ['Derecho Penal', 'Derecho Civil', 'Derecho Ambiental', 'Derecho Laboral', 'Derecho Societario'],
+    accent: '#C49B3C',
   },
 ];
 
@@ -77,8 +104,13 @@ const cardVariants = {
 
 const WHATSAPP_NUMBER = '593994670519';
 
+function getServiceWhatsAppUrl(serviceTitle: string) {
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hola, necesito información sobre su servicio de ${serviceTitle}. ¿Podemos conversar?`)}`;
+}
+
+const genericWhatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hola, necesito información sobre sus servicios de consultoría y asesoría. ¿Podemos conversar?')}`;
+
 export function ServicesSection() {
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hola Galo, necesito información sobre sus servicios de consultoría ambiental. ¿Podemos conversar?')}`;
 
   return (
     <section id="servicios" className="relative py-16 sm:py-20 lg:py-24 bg-white">
@@ -95,19 +127,19 @@ export function ServicesSection() {
           className="text-center mb-12 sm:mb-16"
         >
           <div className="inline-flex items-center gap-2 bg-[#1B7340]/10 px-4 py-2 rounded-full text-[#1B7340] text-sm font-medium mb-4">
-            <Leaf className="w-4 h-4" />
-            Servicios especializados
+            <Briefcase className="w-4 h-4" />
+            Soluciones integrales
           </div>
           <h2 className="font-[family-name:var(--font-playfair)] text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
-            Soluciones integrales que protegen
-            <span className="text-[#1B7340]"> su operación</span>
+            Soluciones en Calidad, Seguridad
+            <span className="text-[#1B7340]"> y Medio Ambiente</span>
           </h2>
           <p className="mt-4 text-gray-500 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
-            Acompañamos a empresas e instituciones a desarrollar su crecimiento ambiental sustentable alineado con las normas regulatorias locales e internacionales. Cada servicio resuelve un problema real.
+            Acompañamos a empresas e instituciones a desarrollar su crecimiento alineado con las normas regulatorias locales e internacionales en Calidad, Seguridad y Medio Ambiente. Cada servicio resuelve un problema real.
           </p>
         </motion.div>
 
-        {/* Service cards - 2 rows of 3 */}
+        {/* Service cards - 3 rows of 3 */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -136,20 +168,48 @@ export function ServicesSection() {
                   e.currentTarget.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.06)';
                 }}
               >
-                {/* Service photo */}
-                <Image
-                  src={service.image}
-                  alt={service.title}
-                  width={600}
-                  height={400}
-                  style={{
-                    borderRadius: '12px 12px 0 0',
-                    width: '100%',
-                    height: '220px',
-                    objectFit: 'cover',
-                    display: 'block',
-                  }}
-                />
+                {/* Service photo or gradient */}
+                {service.image ? (
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    width={600}
+                    height={400}
+                    style={{
+                      borderRadius: '12px 12px 0 0',
+                      width: '100%',
+                      height: '220px',
+                      objectFit: 'cover',
+                      display: 'block',
+                    }}
+                  />
+                ) : (
+                  <div
+                    style={{
+                      borderRadius: '12px 12px 0 0',
+                      width: '100%',
+                      height: '220px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      background: `linear-gradient(135deg, ${service.accent} 0%, ${service.accent}99 50%, ${service.accent}66 100%)`,
+                      position: 'relative',
+                      overflow: 'hidden',
+                    }}
+                  >
+                    {/* Decorative pattern */}
+                    <div
+                      style={{
+                        position: 'absolute',
+                        inset: 0,
+                        opacity: 0.08,
+                        backgroundImage: `radial-gradient(circle at 20% 50%, white 1px, transparent 1px), radial-gradient(circle at 80% 20%, white 1px, transparent 1px), radial-gradient(circle at 60% 80%, white 1px, transparent 1px)`,
+                        backgroundSize: '40px 40px, 60px 60px, 50px 50px',
+                      }}
+                    />
+                    <service.icon style={{ width: '64px', height: '64px', color: 'rgba(255,255,255,0.9)', position: 'relative', zIndex: 1 }} />
+                  </div>
+                )}
                 <CardContent style={{ padding: '24px' }}>
                   {/* Icon */}
                   <div
@@ -184,7 +244,7 @@ export function ServicesSection() {
 
                   {/* CTA link */}
                   <a
-                    href={whatsappUrl}
+                    href={getServiceWhatsAppUrl(service.title)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group/link flex items-center gap-2 font-medium text-sm transition-colors"
@@ -208,7 +268,7 @@ export function ServicesSection() {
           className="mt-12 sm:mt-16 text-center"
         >
           <a
-            href={whatsappUrl}
+            href={genericWhatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-[#1B7340] hover:bg-[#145C33] text-white px-8 py-4 rounded-xl font-semibold text-base sm:text-lg transition-all shadow-lg hover:shadow-xl hover:scale-[1.02]"

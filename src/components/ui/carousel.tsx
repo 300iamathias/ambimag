@@ -95,7 +95,10 @@ function Carousel({
 
   React.useEffect(() => {
     if (!api) return
-    onSelect(api)
+    // Use requestAnimationFrame to avoid direct setState in effect body
+    requestAnimationFrame(() => {
+      onSelect(api)
+    })
     api.on("reInit", onSelect)
     api.on("select", onSelect)
 

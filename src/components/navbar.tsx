@@ -13,6 +13,7 @@ const SOCIAL_LINKS = [
 ];
 const NAV_LINKS = [
   { label: 'Servicios', href: '#servicios' },
+  { label: 'Clientes', href: '#clientes' },
   { label: 'Testimonios', href: '#testimonios' },
   { label: 'Nosotros', href: '#nosotros' },
   { label: 'Contacto', href: '#contacto' },
@@ -21,7 +22,7 @@ const NAV_LINKS = [
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hola, me interesa conocer más sobre los servicios de consultoría ambiental de Ambimag.')}`;
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hola, me interesa conocer más sobre los servicios de Ambimag.')}`;
 
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">

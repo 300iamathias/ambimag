@@ -14,7 +14,7 @@ const STEPS = [
   {
     icon: FileSearch,
     title: 'Diagnóstico gratuito',
-    description: 'Analizamos su situación ambiental, identificamos los permisos y licencias que necesita, y le entregamos un plan de acción con cronograma y presupuesto.',
+    description: 'Analizamos su situación, identificamos los permisos y licencias que necesita, y le entregamos un plan de acción con cronograma y presupuesto.',
     accent: '#0E8A7D',
     step: '02',
   },
@@ -130,7 +130,7 @@ export function ProcessSection() {
             ¿Listo para iniciar? El primer paso es el más fácil.
           </p>
           <a
-            href={`https://wa.me/593994670519?text=${encodeURIComponent('Hola Galo, quiero iniciar un proyecto de consultoría ambiental. ¿Podemos conversar?')}`}
+            href={`https://wa.me/593994670519?text=${encodeURIComponent('Hola, quiero iniciar un proyecto de consultoría. ¿Podemos conversar?')}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#1B7340] hover:bg-[#145C33] text-white px-6 py-3 rounded-xl font-semibold text-sm sm:text-base transition-all shadow-lg hover:shadow-xl hover:scale-[1.02]"

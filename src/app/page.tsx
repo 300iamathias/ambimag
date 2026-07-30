@@ -8,6 +8,7 @@ import { AuthoritySection } from '@/components/authority-section';
 import { TestimonialsSection } from '@/components/testimonials-section';
 import { AboutSection } from '@/components/about-section';
 import { FAQSection } from '@/components/faq-section';
+import { ClientsSection } from '@/components/clients-section';
 import { MapSection } from '@/components/map-section';
 import { CTASection } from '@/components/cta-section';
 import { Footer } from '@/components/footer';
@@ -25,6 +26,7 @@ export default function Home() {
         <TestimonialsSection />
         <AboutSection />
         <FAQSection />
+        <ClientsSection />
         <MapSection />
         <CTASection />
       </main>

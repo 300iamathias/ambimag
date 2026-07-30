@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const WHATSAPP_NUMBER = '593994670519';
 
 export function AboutSection() {
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hola Galo, quiero saber más sobre Ambimag y cómo pueden ayudar a mi empresa. ¿Podemos conversar?')}`;
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hola, quiero saber más sobre Ambimag...')}`;
 
   return (
     <section id="nosotros" className="relative py-16 sm:py-20 lg:py-24 bg-white">
@@ -41,10 +41,10 @@ export function AboutSection() {
           >
             <div className="bg-gray-50 rounded-xl p-6 sm:p-8 lg:p-10">
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-6">
-                <strong className="text-gray-900">Ambiental Integral Ambimag Cía. Ltda.</strong> es una firma de consultoría ambiental fundada en Ecuador con la misión de ayudar a empresas de todos los sectores a operar dentro del marco legal, minimizar riesgos ambientales y obtener las licencias y permisos necesarios sin complicaciones. Nuestra filosofía se basa en tres principios: <strong className="text-[#1B7340]">cumplimiento real</strong>, <strong className="text-[#0E8A7D]">agilidad en la gestión</strong> y <strong className="text-[#C49B3C]">compromiso con el resultado</strong>.
+                <strong className="text-gray-900">Ambimag Cía. Ltda.</strong> es una firma de consultoría especializada en soluciones ambientales, de calidad y seguridad, que acompaña a empresas e instituciones a desarrollar su crecimiento, alineado con las normas regulatorias locales e internacionales, legislación ambiental, Seguridad e Higiene, Buenas Prácticas de Manufactura, y ordenanzas municipales. Nuestra filosofía se basa en tres principios: <strong className="text-[#1B7340]">cumplimiento real</strong>, <strong className="text-[#0E8A7D]">agilidad en la gestión</strong> y <strong className="text-[#C49B3C]">compromiso con el resultado</strong>.
               </p>
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-6">
-                Sabemos que la normativa ambiental ecuatoriana es extensa, dinámica y exigente. Las empresas que no cuentan con un aliado especializado enfrentan multas, paralizaciones de operaciones y daño reputacional. En Ambimag transformamos esa complejidad en soluciones concretas: desde la elaboración del Estudio de Impacto Ambiental hasta la obtención de la Licencia Ambiental de Operación, nuestro equipo gestiona cada paso del proceso.
+                Sabemos que la normativa ecuatoriana es extensa, dinámica y exigente. Las empresas que no cuentan con un aliado especializado enfrentan multas, paralizaciones de operaciones y daño reputacional. En Ambimag transformamos esa complejidad en soluciones concretas: desde la elaboración del Estudio de Impacto Ambiental hasta la obtención de la Licencia Ambiental de Operación, pasando por la implementación de sistemas de gestión de calidad y seguridad y salud ocupacional, nuestro equipo gestiona cada paso del proceso.
               </p>
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
                 Lo que realmente nos distingue es la <strong className="text-[#1B7340]">atención personalizada</strong>. Cada proyecto es supervisado directamente por nuestro Gerente General, <strong className="text-gray-900">Galo Estupiñán Vera</strong>, quien garantiza la calidad, los tiempos de entrega y la comunicación constante con cada cliente. Cuando usted trabaja con Ambimag, tiene un profesional de confianza al que puede llamar directamente, sin intermediarios.
@@ -76,7 +76,7 @@ export function AboutSection() {
                 Contáctanos
               </h3>
               <p className="text-white/80 text-sm mb-6 leading-relaxed">
-                Hablar directamente con nuestro equipo de especialistas es la forma más rápida y efectiva de iniciar su proyecto de consultoría ambiental o capacitación. Sin intermediarios, sin burocracia interna.
+                Hablar directamente con nuestro equipo de especialistas es la forma más rápida y efectiva de iniciar su proyecto de consultoría o capacitación. Sin intermediarios, sin burocracia interna.
               </p>
 
               {/* Contact items */}

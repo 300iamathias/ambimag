@@ -9,7 +9,7 @@ const TESTIMONIALS = [
     name: 'Carlos Montoya',
     role: 'Director de Operaciones',
     company: 'Constructora Guayas S.A.',
-    text: 'Ambimag nos ayudó a obtener la Licencia Ambiental de Operación en tiempo récord. Su equipo gestionó todo el proceso con el MAATE sin que nosotros tuviéramos que preocuparnos por nada. Lo que más valoro es la comunicación constante: siempre supimos en qué etapa estaba el trámite. Sin duda, el mejor aliado ambiental en Ecuador.',
+    text: 'Ambimag nos ayudó a obtener la Licencia Ambiental de Operación en tiempo récord. Su equipo gestionó todo el proceso con el MAATE sin que nosotros tuviéramos que preocuparnos por nada. Lo que más valoro es la comunicación constante: siempre supimos en qué etapa estaba el trámite. Sin duda, el mejor aliado en Ecuador.',
     rating: 5,
     initials: 'CM',
     color: '#1B7340',
@@ -27,7 +27,7 @@ const TESTIMONIALS = [
     name: 'Ing. Roberto Anchundia',
     role: 'Supervisor de SST',
     company: 'Minera Aurífera del Ecuador',
-    text: 'Llevamos más de 3 años trabajando con Ambimag en todos nuestros proyectos de consultoría ambiental y capacitación. Lo que los diferencia es el compromiso real: no solo entregan documentos, sino que acompañan hasta que la empresa opera con total cumplimiento. Su programa de capacitación en SST transformó la cultura de seguridad en nuestra operación.',
+    text: 'Llevamos más de 3 años trabajando con Ambimag en todos nuestros proyectos de consultoría y capacitación. Lo que los diferencia es el compromiso real: no solo entregan documentos, sino que acompañan hasta que la empresa opera con total cumplimiento. Su programa de capacitación en SST transformó la cultura de seguridad en nuestra operación.',
     rating: 5,
     initials: 'RA',
     color: '#C49B3C',
@@ -73,7 +73,7 @@ export function TestimonialsSection() {
             <span className="text-[#1B7340]"> en Ambimag</span>
           </h2>
           <p className="mt-4 text-gray-500 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
-            Más de 200 proyectos exitosos respaldan nuestro compromiso. Conozca la opinión de quienes ya eligieron a Ambimag como su aliado ambiental.
+            Más de 200 proyectos exitosos respaldan nuestro compromiso. Conozca la opinión de quienes ya eligieron a Ambimag como su aliado.
           </p>
         </motion.div>
 

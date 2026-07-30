@@ -23,28 +23,28 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Ambimag | Consultoría Ambiental Integral en Ecuador",
+  title: "Ambimag | Consultoría y Asesoría Integral en Ecuador",
   description:
-    "Acompañamos a empresas e instituciones a desarrollar su crecimiento ambiental sustentable alineado con las normas regulatorias locales e internacionales. Consultoría ambiental integral, Gestión 360, Capacitación Profesional. Guayaquil, Ecuador.",
+    "Acompañamos a empresas e instituciones a desarrollar su crecimiento alineado con las normas regulatorias locales e internacionales en Calidad, Seguridad y Medio Ambiente. Consultoría y asesoría integral, Gestión 360, Capacitación Profesional. Guayaquil, Ecuador.",
   keywords: [
-    "consultoría ambiental Ecuador",
-    "licencias ambientales",
-    "gestión normativa ambiental",
+    "consultoría y asesoría Ecuador",
+    "licencias y permisos",
+    "gestión normativa",
     "Ambimag",
-    "Galo Estupiñán Vera",
-    "consultoría integral ambiental",
+    "calidad",
+    "consultoría integral",
     "Ecuador",
     "estudios ambientales",
-    "SST ambiental",
+    "SST",
     "capacitación profesional",
     "gestión 360 proyectos contractuales",
-    "ingeniería ambiental",
+    "gestión de calidad",
     "higiene industrial",
     "seguridad industrial",
     "gestión de desechos",
     "Guayaquil",
   ],
-  authors: [{ name: "Galo Estupiñán Vera" }],
+  authors: [{ name: "Ambimag Cía. Ltda." }],
   manifest: "/manifest.json",
   icons: {
     icon: [
@@ -61,17 +61,17 @@ export const metadata: Metadata = {
     title: "Ambimag",
   },
   openGraph: {
-    title: "Ambimag | Consultoría Ambiental Integral en Ecuador",
+    title: "Ambimag | Consultoría y Asesoría Integral en Ecuador",
     description:
-      "Acompañamos a empresas e instituciones a desarrollar su crecimiento ambiental sustentable. +10 años siendo líderes en consultoría y capacitación corporativa.",
+      "Acompañamos a empresas e instituciones a desarrollar su crecimiento en Calidad, Seguridad y Medio Ambiente.",
     siteName: "Ambimag",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ambimag | Consultoría Ambiental Integral en Ecuador",
+    title: "Ambimag | Consultoría y Asesoría Integral en Ecuador",
     description:
-      "Acompañamos a empresas e instituciones a desarrollar su crecimiento ambiental sustentable. +10 años siendo líderes en consultoría y capacitación corporativa.",
+      "Acompañamos a empresas e instituciones a desarrollar su crecimiento en Calidad, Seguridad y Medio Ambiente.",
   },
 };
 
