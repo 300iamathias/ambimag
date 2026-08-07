@@ -93,7 +93,7 @@ export function AboutSection() {
                   <div>
                     <p className="text-white/60 text-xs">Correo electrónico</p>
                     <p className="text-white font-semibold">gestupinan@consultorambimag.com.ec</p>
-                    <p className="text-white font-semibold">galogestupinan@gmail.com</p>
+                    <p className="text-white font-semibold">qfgalogestupinan@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 bg-white/10 rounded-lg p-3">
