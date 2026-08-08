@@ -51,6 +51,9 @@ const CLIENT_TYPES = [
   'Agroindustria',
   'Sector petrolero y energético',
   'Gobierno y entidades públicas',
+  'Industria alimenticia',
+  'Sector farmacéutico',
+  'Empresas logísticas',
 ];
 
 const DIFFERENTIATORS = [
