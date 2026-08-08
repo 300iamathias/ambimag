@@ -17,12 +17,21 @@ const SERVICES = [
   },
   {
     icon: Award,
-    title: 'Gestión de Calidad y BPM',
+    title: 'BPM / BRADT',
+    image: '/images/service-bpm-bradt.jpg',
+    description:
+      'Buenas Prácticas de Manufactura, Almacenamiento, Distribución y Transporte. Implementación y mantenimiento de sistemas BPM en sectores farmacéutico, alimentario y cosmético, garantizando el cumplimiento regulatorio en cada etapa de la cadena productiva.',
+    features: ['BPM Farmacéutica', 'BPM Alimentaria y Cosméticos', 'BRADT: Almacenamiento y Distribución', 'Buenas Prácticas de Transporte', 'Cumplimiento Regulatorio BPM'],
+    accent: '#0E8A7D',
+  },
+  {
+    icon: Award,
+    title: 'Gestión de Calidad / BASC',
     image: '/images/service-advisory.jpg',
     description:
-      'Implementación, mantenimiento y fortalecimiento de sistemas de gestión de calidad como ISO 9001:2015. Buenas Prácticas de Manufactura farmacéutica, alimentaria y cosméticos. Auditorías internas, a proveedores y reingeniería de procesos para la mejora continua.',
-    features: ['ISO 9001:2015', 'BPM Farmacéutica', 'BPM Alimentaria y Cosméticos', 'BASC: Seguridad en Comercio Exterior', 'Auditorías y Reingeniería de Procesos'],
-    accent: '#0E8A7D',
+      'Implementación, mantenimiento y fortalecimiento de sistemas de gestión de calidad como ISO 9001:2015. Gestión de seguridad y control en la cadena de suministro bajo el estándar BASC. Auditorías internas, a proveedores y reingeniería de procesos para la mejora continua.',
+    features: ['ISO 9001:2015', 'BASC: Seguridad en Comercio Exterior', 'Gestión de Calidad Integral', 'Auditorías y Reingeniería de Procesos', 'Mejora Continua'],
+    accent: '#2D6A4F',
   },
   {
     icon: Shield,

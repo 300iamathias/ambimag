@@ -52,7 +52,12 @@ export function Footer() {
               </li>
               <li>
                 <a href="#servicios" className="text-white/70 hover:text-white text-sm transition-colors">
-                  Gestión de Calidad y BPM
+                  BPM / BRADT
+                </a>
+              </li>
+              <li>
+                <a href="#servicios" className="text-white/70 hover:text-white text-sm transition-colors">
+                  Gestión de Calidad / BASC
                 </a>
               </li>
               <li>

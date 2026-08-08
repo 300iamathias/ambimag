@@ -15,7 +15,7 @@ const FAQS = [
   },
   {
     question: '¿Trabajan con empresas de cualquier sector industrial?',
-    answer: 'Sí, Ambimag tiene experiencia comprobada en más de 6 sectores industriales: manufacturera, minería, construcción, agroindustria, petrolero y gobierno. Cada sector tiene particularidades regulatorias específicas, y nuestro equipo tiene el conocimiento y la experiencia para gestionar los permisos y licencias que su actividad requiere. Además, trabajamos tanto con empresas grandes como con pymes, adaptando nuestros servicios al tamaño y necesidades de cada cliente.',
+    answer: 'Sí, Ambimag tiene experiencia comprobada en más de 9 sectores industriales: manufacturera, minería, construcción, agroindustria, petrolero, gobierno, alimenticio, farmacéutico y logística. Cada sector tiene particularidades regulatorias específicas, y nuestro equipo tiene el conocimiento y la experiencia para gestionar los permisos y licencias que su actividad requiere. Además, trabajamos tanto con empresas grandes como con pymes, adaptando nuestros servicios al tamaño y necesidades de cada cliente.',
   },
   {
     question: '¿Cuál es la diferencia entre un Estudio de Impacto Ambiental y un Plan de Manejo Ambiental?',
