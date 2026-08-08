@@ -17,11 +17,11 @@ const SERVICES = [
   },
   {
     icon: Award,
-    title: 'BPM / BRADT',
+    title: 'BPM / BPADT',
     image: '/images/service-bpm-bradt.jpg',
     description:
       'Buenas Prácticas de Manufactura, Almacenamiento, Distribución y Transporte. Implementación y mantenimiento de sistemas BPM en sectores farmacéutico, alimentario y cosmético, garantizando el cumplimiento regulatorio en cada etapa de la cadena productiva.',
-    features: ['BPM Farmacéutica', 'BPM Alimentaria y Cosméticos', 'BRADT: Almacenamiento y Distribución', 'Buenas Prácticas de Transporte', 'Cumplimiento Regulatorio BPM'],
+    features: ['BPM Farmacéutica', 'BPM Alimentaria y Cosméticos', 'BPADT: Almacenamiento y Distribución', 'Buenas Prácticas de Transporte', 'Cumplimiento Regulatorio BPM'],
     accent: '#0E8A7D',
   },
   {

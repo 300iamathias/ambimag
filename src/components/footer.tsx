@@ -52,7 +52,7 @@ export function Footer() {
               </li>
               <li>
                 <a href="#servicios" className="text-white/70 hover:text-white text-sm transition-colors">
-                  BPM / BRADT
+                  BPM / BPADT
                 </a>
               </li>
               <li>
