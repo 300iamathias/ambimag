@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import { JsonLd } from "@/components/json-ld";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -22,7 +23,10 @@ export const viewport: Viewport = {
   themeColor: "#1B7340",
 };
 
+const SITE_URL = "https://ambimag.com.ec";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Ambimag | Consultoría y Asesoría Integral en Ecuador",
   description:
     "Acompañamos a empresas e instituciones a desarrollar su crecimiento alineado con las normas regulatorias locales e internacionales en Calidad, Seguridad y Medio Ambiente. Consultoría y asesoría integral, Gestión 360, Capacitación Profesional. Guayaquil, Ecuador.",
@@ -45,6 +49,11 @@ export const metadata: Metadata = {
     "Guayaquil",
   ],
   authors: [{ name: "Ambimag Cía. Ltda." }],
+  creator: "Ambimag Cía. Ltda.",
+  publisher: "Ambimag Cía. Ltda.",
+  alternates: {
+    canonical: "/",
+  },
   manifest: "/manifest.json",
   icons: {
     icon: [
@@ -64,8 +73,10 @@ export const metadata: Metadata = {
     title: "Ambimag | Consultoría y Asesoría Integral en Ecuador",
     description:
       "Acompañamos a empresas e instituciones a desarrollar su crecimiento en Calidad, Seguridad y Medio Ambiente.",
+    url: SITE_URL,
     siteName: "Ambimag",
     type: "website",
+    locale: "es_EC",
   },
   twitter: {
     card: "summary_large_image",
@@ -90,6 +101,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${playfair.variable} antialiased bg-background text-foreground`}
       >
+        <JsonLd />
         {children}
         <Toaster />
         {/* Service Worker Registration */}
